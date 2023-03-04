@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #11112d !important;
+	width: 100%;
+	height: 85px;
+	padding: 0 0 0 55px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+
+}
+
+header img {
+	width: 100%;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 75px;
+}
+
+.logo-name {
+	font-size: 30px;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 600;
+	text-shadow: 0 0 6px #04b7df, 0 0 8px #0000FF;
+}
+
+
+.icons {
+	color: white;
+	font-size: 13px;
+	margin: 0 15px;
+	gap: 3px;
+	border-radius: 20px;
+
+	display: flex;
+}
+
+.icon-center {
+	margin: 5px;
+}
+
+
+.icon-center a{
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	color: white;
+	border: 2px solid transparent;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.item1:hover {
+	background-color: #04b7df;
+	box-shadow: 0 0 30px #04b7df;
+	border-radius: 20px;
+}
+
+.icon-center p {
+	padding: 0 0 0 3px;
+}
+
+
+.icone {
+	width: 25px;
+}
+
+
+.main-cadastro {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #303952 !important;
+
+	display: flex;
+	justify-content: center;
+
+}
+
+.pagina-cadastro {
+	width: 1024px;
+	height: auto;
+	margin: 50px auto 75px auto;
+	background-color: #303952;
+
+}
+
+
+.topo-cadastro {
+	text-align: center;
+	color: white;
+	padding: 0 0 40px 0;
+}
+
+.topo-cadastro h1 {
+	font-size: 25px;
+	padding: 0px 0 2px 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+.texto-topo {
+
+	font-size: 15px;
+}
+
+.topo-cadastro img {
+	width: 75px;
+
+}
+
+.conteudo-cadastro {
+
+	text-align: center;
+
+}
+
+input {
+
+	border-radius: 1000px;
+	border:2px solid white;
+	background-color: transparent;
+	outline: none;
+	color: white;
+	position: relative;
+	transition: 0.4s ease-in-out;
+}
+
+input::placeholder {
+	color: white;
+}
+
+input:focus {
+	box-shadow: 0 0 15px 0.5px white;
+}
+
+.nome {
+	width: 45%;
+	height: 40px;
+	font-size: 15px;
+	padding: 0 0 0 15px;
+	margin: 20px 0;
+}
+
+.nome2 {
+	width: 29.9%;
+	height: 40px;
+	font-size: 15px;
+	padding: 0 10px 0 15px;
+	margin: 0px 0 20px 0;
+	
+}
+
+
+.nome3 {
+	width: 91%;
+	height: 40px;
+	font-size: 15px;
+	padding: 0 0 0 15px;
+}
+
+
+
+.checkbox-notificacoes {
+	text-align: left;
+	padding: 60px 20px 15px 52px;
+
+	color: white;
+}
+
+.checkbox-notificacoes input {
+	margin: 10px 0;
+
+}
+
+.checkbox-notificacoes a{
+	text-decoration: none;
+	color: #00a8ff;
+}
+
+.checkbox-notificacoes a:hover {
+	border-bottom: 1px solid #00a8ff;
+}
+
+.check {
+	margin: 0 0 10px 0;
+}
+
+button {
+	width: 91%;
+	height: 40px;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 1000px;
+	border:2px solid white;
+	background-color: transparent;
+	outline: none;
+	color: white;
+	transition: 0.4s ease-in-out;
+}
+
+button:hover {
+	background-color: white;
+	color: #303952;
+}
+
+.remember {
+	text-align: right;
+	color: white;
+	padding: 10px 52px 0 0;
+}
+
+.remember a {
+	text-decoration: none;
+	color: #00a8ff;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	padding: 25px 25px;
+	background-color: #2d3436;
+	color: white;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(300px, auto);
+	gap: 25px;
+
+	grid-template-areas: 
+
+	"column1 column2 column3 column4"
+
+	;
+}
+
+.column1 {
+	grid-area: column1;
+}
+
+.column2 {
+	padding: 0 0 0 35px;
+	grid-area: column2;
+}
+
+.column3 {
+	grid-area: column3;
+}
+
+.column32 {
+	padding: 25px 0 0 0 ;
+}
+
+.column4 {
+	padding: 0 0 0 10px;
+	grid-area: column4;
+}
+
+footer h3{
+	padding: 0 0 10px 0;
+	font-size: 17px;
+	color: #fed330;
+}
+
+footer h4 {
+	padding: 0 0 10px 0;
+}
+
+.titulo-redes {
+	padding: 15px 0 0 0;
+}
+
+footer p {
+	font-size: 15px;
+	padding: 0 0 10px 0;
+	line-height: 20px;
+}
+
+
+footer a {
+	color: white;
+	text-decoration: none;
+	transition: 0.2s all linear;
+}
+
+.links-departamento {
+	display: flex;
+	flex-direction: column;
+}
+
+footer a:hover {
+	color: #fed330;
+}
+
+.redes-sociais {
+	padding: 5px 0 0 0;
+}
+
+.redes-sociais img {
+	width: 25px;
+}
+
+.copyright p{
+	padding: 18px 0 0 0;
+	font-size: 13px;
+}
+
+@media screen and (max-width: 710px) {
+
+	.checkbox-notificacoes {
+	padding: 60px 25px 15px 45px;
+	}
+
+	.remember {
+
+		padding: 10px 45px 0 0;
+
+	}
+
+	footer {
+
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px 40px;
+
+	grid-template-areas: 
+	"column1 column1 column2 column2"
+	"column3 column3 column4 column4"
+	;
+	}
+
+	.column4 {
+
+		padding: 0 0 0 37px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+
+	header {
+		padding: 10px;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+}	
+
+@media screen and (max-width: 600px) {
+	.nome {
+		width: 92%;
+		margin: 5px auto 15px auto;
+	}
+
+	.nome3 {
+
+		width: 92%;
+		margin: 5px auto 15px auto;
+
+	}
+
+	.checkbox-notificacoes {
+	padding: 60px 25px 15px 40px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.pagina-cadastro {
+	height: auto;
+	margin: 40px auto 75px auto;
+	}
+
+	.topo-cadastro {
+	text-align: center;
+	color: white;
+	padding: 0 0 30px 0;
+	}
+
+	.nome, .nome2, .nome3 {
+
+		width: 92%;
+		margin: 5px auto 10px auto;
+
+	}
+
+	.checkbox-notificacoes {
+	padding: 45px 20px 15px 35px;
+	}
+
+	.remember {
+
+		padding: 10px 30px 0 0;
+
+	}
+
+	footer .column {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 470px) {
+
+	footer p {
+		font-size: 14px;
+
+	}
+}
+
+@media screen and (max-width: 410px) {
+
+	footer {
+	padding-right: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(250px, auto)
+	gap: 0;
+
+	grid-template-areas: 
+	"column1 column1 column1 column1"
+	"column2 column2 column2 colum2"
+	"column3 column3 column3 column3"
+	"column4 column4 column4 colum4"
+	;
+	}
+
+	.checkbox-notificacoes {
+	padding: 45px 20px 15px 30px;
+	}
+
+	.remember {
+
+		padding: 5px 28px 0 0;
+		font-size: 15px;
+
+	}
+	
+
+}
+
+@media screen and (max-width: 350px) {
+
+	header {
+		width: 100%;
+		gap: 5px;
+	}
+
+	.logo {
+		width: 50px;
+	}
+
+	.icons {
+		margin: 0;
+		padding: 0;
+		gap: 0;
+	}
+
+	.icone {
+		width: 18px;
+		margin:: 0;
+	}
+
+	.item-leitura6 {
+		font-size: 12px;
+	}
+
+	footer {
+		height: auto;
+		grid-auto-rows: minmax(auto, auto);
+		gap: 30px;
+	}
+
+	.checkbox-notificacoes {
+	padding: 45px 25px 15px 30px;
+	font-size: 15px;
+	line-height: 20px;
+	}
+
+	.remember {
+
+		padding: 10px 35px 0 0;
+
+	}
+
+}
+
